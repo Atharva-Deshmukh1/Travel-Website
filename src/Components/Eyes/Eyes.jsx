@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Card from '../Card/Card'
 
 const Eyes = () => {
 
@@ -22,7 +23,7 @@ useEffect(()=>{
 
   return (
     <div className='eys w-full h-screen overflow-hidden'>
-        <div className='relative w-full h-full'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.7" className='relative w-full h-full'>
             <div className='absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]'>
                 <div className='flex items-center justify-center w-[15vw] h-[15vw] rounded-full bg-slate-300'>
                     <div  className=' w-2/3 h-2/3 relative  rounded-full bg-slate-800'>
@@ -49,6 +50,7 @@ useEffect(()=>{
 
             </div>
 
+        <Card />
         </div>
       
     </div>
