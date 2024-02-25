@@ -7,7 +7,7 @@ const Featured = () => {
 
   return (
     
-    <div className='w-full py-10 bg-[#9ec1d7] pb-20'>
+    <div id="featured" className='w-full py-10 bg-[#9ec1d7] pb-20'>
       <div className='w-full px-10'>
         <h1 className='text-6xl font-bold tracking-tight text-center'>Featured Product</h1>
       </div>

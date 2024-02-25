@@ -1,47 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const Card = (props) => {
+const Card = ({ image, Name, desc }) => {
+    const [showDetails, setShowDetails] = useState(false);
+
     return (
-        <div className=''>
-
-
-            {/* <div class="max-w-sm w-[400px] h-72 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
-                <img class="rounded-t-lg h-[70%] " src={props.image} alt="" />
-
-                <div class="p-5">
-
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.Name} </h5>
-
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{props.desc}</p>
-                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        BOOK NOW
-                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                </div>
-            </div> */}
-            <div className='h-auto bg-gray-500 w-full flex justify-center   rounded-lg'>
-
-
-                <div className=" h-[250px] w-[22rem]  p-2   rounded-lg ">
-
-
-                    <img className=" h-[70%] w-full object-fill " src={props.image} alt="" />
-                    <div className=''>
-                        <p className='font-semibold'>{props.Name}</p>
-                        <p className='font-normal'>{props.desc}</p>
-                    </div>
-
-
-
-
-                </div>
-
-            </div >
+        <div
+            className='relative group w-72 h-60 bg-[#a8aac10c] rounded-lg overflow-hidden cursor-pointer border-2 border-white'
+            onMouseEnter={() => setShowDetails(true)}
+            onMouseLeave={() => setShowDetails(false)}
+        >
+            <img src={image} alt={Name} className='w-full h-48 object-cover' />
+            <h3 className='text-lg text-center font-bold text-gray-100 z-10'>{Name}</h3>
+            <div className={`absolute inset-0 flex flex-col justify-center items-center transition-opacity duration-300 ${showDetails ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+                <div className={`bg-zinc-300 bg-opacity-90 w-full h-full absolute inset-0 transition-opacity duration-300 ${showDetails ? 'opacity-100' : 'opacity-[-10]'}`}></div>
+                <p className='text-sm text-black text-center z-10'>{showDetails ? desc : ''}</p>
+                <button className={`mt-2 px-4 py-2 bg-blue-500 text-black rounded hover:bg-blue-600 transition-colors z-10 ${showDetails ? 'block' : 'hidden'}`}>
+                    Book Now
+                </button>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Card
+export default Card;
