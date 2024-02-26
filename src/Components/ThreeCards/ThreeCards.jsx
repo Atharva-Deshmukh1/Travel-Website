@@ -1,16 +1,32 @@
 import React from 'react';
 
 const ThreeCards = () => {
-  return (<>
-  <h1 id="ourwork" className='text-6xl font-bold text-center bg-[#1b1c27] uppercase pt-20'>our work</h1>
-    <div className='w-full h-[80vh] bg-[#1b1c27]  flex gap-5 items-center px-10'>
-      <div className='cardcontainer h-[40vh] w-1/2'>
+  return (
+  <>
+    <h1 id="ourwork" className='text-6xl font-bold text-center bg-[#1b1c27] uppercase pt-20'>our work</h1>
+    
+    <div className='h-auto sm:hidden py-32 gap-10 justify-center flex flex-wrap bg-zinc-300'>
+      
+      <div className='bg-red-200 w-[22rem] h-72 mx-[10%] border-2 border-black'>
+
+      </div>
+      <div className='bg-red-200 w-[22rem] h-72 mx-[10%] border-2 border-black'>
+
+      </div>
+      <div className='bg-red-200 w-[22rem] h-72 mx-[10%] border-2 border-black'>
+
+      </div>
+      
+    </div>
+
+    <div className='hidden w-full h-[80vh] bg-[#1b1c27]  sm:flex [from sm to xl]flex-wrap gap-5 items-center px-10'>
+      
+      <div className='cardcontainer h-[40vh] w-full px-10 xl:px-0 xl:w-1/2'>
         <div className='card w-full h-full rounded-xl bg-[url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/8b/64/ea/caption.jpg?w=1200&h=-1&s=1&cx=1920&cy=1080&chk=v1_88207e0b57748807e05a")] bg-no-repeat bg-cover  relative '>
           <div className="absolute rounded-xl bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white">ROAD TRIP</div>
         </div>
-         
-
       </div>
+
       <div className='cardcontainer h-[40vh] flex gap-5 w-1/2'>
         <div className='card w-1/2 h-full rounded-xl bg-[url("https://media.cntraveler.com/photos/607313c3d1058698d13c31b5/1:1/w_1636,h_1636,c_limit/FamilyCamping-2021-GettyImages-948512452-2.jpg")] bg-no-repeat bg-cover relative'>
           <div className="absolute bottom-0 rounded-xl left-0 right-0 p-4 bg-black bg-opacity-50 text-white">CAMPING</div>
@@ -19,6 +35,7 @@ const ThreeCards = () => {
           <div className="absolute bottom-0 left-0 rounded-xl right-0 p-4 bg-black bg-opacity-50 text-white">TREAKING</div>
         </div>
       </div>
+      
     </div>
     </>
   );

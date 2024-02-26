@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function Navbar() {
+
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,17 +32,22 @@ function Navbar() {
 
   return (
     <div className={`w-full px-6 md:px-20 py-4 md:py-6 flex justify-between z-[999] text-black fixed backdrop-filter backdrop-blur-lg transition-transform ${visible ? '' : '-translate-y-full'}`}>
+      
       <div>
         <h2 className='font-bold text-lg md:text-2xl'>TravelWise</h2>
       </div>
+
       {/* Navigation Links */}
       <div className={`md:flex md:gap-10 md:items-center md:justify-between ${isMobileMenuOpen ? 'flex flex-col md:flex-row' : 'hidden'}`}>
         {["About us", "Bookings", "Featured", "Our Work", "Contact us"]
           .filter((item) => !isMobileMenuOpen || item !== "Contact us")
           .map((item, index) => (
-            <a key={index} href={`#${item.toLowerCase().replace(/\s/g, '')}`} onClick={(e) => handleNavLinkClick(e, item.toLowerCase().replace(/\s/g, ''))} className={`text-md md:text-md font-semibold ${index === 4 && "ml-4 md:ml-8"} `}>{item}</a>
+            <a key={index} href={`#${item.toLowerCase().replace(/\s/g, '')}`} 
+            onClick={(e) => handleNavLinkClick(e, item.toLowerCase().replace(/\s/g, ''))} 
+            className={`text-md md:text-md font-semibold ${index === 4 && "ml-4 md:ml-8"} `}>{item}</a>
           ))}
       </div>
+
       {/* Mobile Menu Toggle */}
       <div className="md:hidden">
         <button onClick={toggleMobileMenu} className="focus:outline-none">

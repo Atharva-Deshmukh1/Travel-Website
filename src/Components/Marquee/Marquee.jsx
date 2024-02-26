@@ -17,7 +17,9 @@ function Marquee() {
         animate={{x:"-100%"}}
         transition={{repeat:Infinity, ease:"linear", duration:10}}
         className='text-[20vw] leading-none font-bold pr-10 uppercase'>Travel the world. </motion.h1>
+
       </div>
+      
     </div>
   )
 }
