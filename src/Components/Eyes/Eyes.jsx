@@ -58,7 +58,7 @@ const Eyes = () => {
                     />
                 </div>
 
-                <div className='absolute flex gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10'>
+                <div className='hidden absolute md:flex gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10'>
                     
                     <div className='flex items-center justify-center w-[12vw] h-[12vw] rounded-full bg-slate-300'>
                         <div className='w-2/3 h-2/3 relative rounded-full bg-slate-800'>

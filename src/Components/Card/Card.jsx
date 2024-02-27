@@ -5,7 +5,7 @@ const Card = ({ image, Name, desc }) => {
 
     return (
         <div
-            className='relative group w-72 h-60 bg-[#a8aac10c] rounded-lg overflow-hidden cursor-pointer border-2 border-white'
+            className='relative group h-[220px] w-[130px] md:w-72 md:h-60 bg-[#a8aac10c] rounded-lg overflow-hidden cursor-pointer border-2 border-white'
             onMouseEnter={() => setShowDetails(true)}
             onMouseLeave={() => setShowDetails(false)}
         >
