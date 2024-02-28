@@ -27,7 +27,7 @@ const Eyes = () => {
     return (
         <div id="bookings" className='eyes-section w-full h-screen overflow-hidden relative z-0'>
             
-            <div data-scroll data-scroll-section data-scroll-speed="-.7" className='w-full h-full '>
+            <div data-scroll data-scroll-section data-scroll-speed="-.7" className='w-full h-[80%] md:h-full '>
                 
                 <div className='absolute top-20 left-10'>
                     <Card 
