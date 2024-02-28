@@ -5,11 +5,11 @@ const Card = ({ image, Name, desc }) => {
 
     return (
         <div
-            className='relative group h-[220px] w-[130px] md:w-72 md:h-60 bg-[#a8aac10c] rounded-lg overflow-hidden cursor-pointer border-2 border-white'
+            className='relative group h-[160px] w-[110px] sm:max-lg:h-[160px] sm:max-lg:w-[275px] lg:w-[18rem] lg:h-[12rem] bg-[#a8aac10c] rounded-lg overflow-hidden cursor-pointer border-2 border-white'
             onMouseEnter={() => setShowDetails(true)}
             onMouseLeave={() => setShowDetails(false)}
         >
-            <img src={image} alt={Name} className='w-full h-48 object-cover' />
+            <img src={image} alt={Name} className='w-full h-[8rem] lg:h-[10rem] object-cover' />
             <h3 className='text-lg text-center font-bold text-gray-100 z-10'>{Name}</h3>
             <div className={`absolute inset-0 flex flex-col justify-center items-center transition-opacity duration-300 ${showDetails ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
                 <div className={`bg-zinc-300 bg-opacity-90 w-full h-full absolute inset-0 transition-opacity duration-300 ${showDetails ? 'opacity-100' : 'opacity-[-10]'}`}></div>

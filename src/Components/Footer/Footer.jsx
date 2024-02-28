@@ -16,7 +16,7 @@ const Footer = () => {
         <h1>Travel in style.</h1>
       </div>
       <div className='w-1/2'>
-        <h1 className='text-2xl md:text-5xl font-bold uppercase '>
+        <h1 className='text-xl md:text-5xl font-bold uppercase '>
           presentation
         </h1>
         <div className='flex flex-col justify-center pt-10 gap-2'>
