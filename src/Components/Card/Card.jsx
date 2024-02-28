@@ -9,7 +9,7 @@ const Card = ({ image, Name, desc }) => {
             onMouseEnter={() => setShowDetails(true)}
             onMouseLeave={() => setShowDetails(false)}
         >
-            <img src={image} alt={Name} className='w-full h-[10rem] lg:h-[10rem] object-cover' />
+            <img src={image} alt={Name} className='w-full h-[21vh] lg:h-[10rem] object-cover' />
             <h3 className='text-lg text-center font-bold text-gray-100 z-10'>{Name}</h3>
             <div className={`absolute inset-0 flex flex-col justify-center items-center transition-opacity duration-300 ${showDetails ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
                 <div className={`bg-zinc-300 bg-opacity-90 w-full h-full absolute inset-0 transition-opacity duration-300 ${showDetails ? 'opacity-100' : 'opacity-[-10]'}`}></div>
