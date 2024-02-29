@@ -5,7 +5,7 @@ const ThreeCards = () => {
   <>
     <h1 id="ourwork" className='text-[8vw] font-bold text-center bg-[#1b1c27] uppercase pt-20'>our work</h1>
     
-    <div className='h-auto sm:hidden py-32 gap-10 justify-center flex flex-wrap bg-[#1b1c27]'>
+    <div className='h-auto sm:hidden pt-[5rem] pb-32 gap-10 justify-center flex flex-wrap bg-[#1b1c27]'>
     
       <div className='bg-[url("https://a-static.besthdwallpaper.com/travel-all-terrain-vehicle-with-lights-on-the-road-in-forests-at-dawn-wallpaper-3840x2160-95444_54.jpg")] bg-no-repeat bg-cover relative w-[22rem] h-72 mx-[10%] border-2 border-black rounded-lg overflow-hidden'>
         <div className="absolute bottom-0  left-0 right-0 p-4 bg-black bg-opacity-50 text-white">ROAD TRIP</div>

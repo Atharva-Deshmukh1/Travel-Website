@@ -26,9 +26,9 @@ const Eyes = () => {
 
     return (
         <div id="bookings" className='eyes-section w-full h-screen overflow-hidden relative z-0'>
-            
+
             <div data-scroll data-scroll-section data-scroll-speed="-.7" className='w-full h-[80%] md:h-full '>
-                
+
                 <div className='absolute top-20 left-[1.5rem]'>
                     <Card 
                         image="https://www.axisbank.com/images/default-source/progress-with-us_new/what-to-do-in-switzerland.jpg"
@@ -59,7 +59,7 @@ const Eyes = () => {
                 </div>
 
                 <div className='hidden absolute md:flex gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10'>
-                    
+
                     <div className='flex items-center justify-center w-[12vw] h-[12vw] rounded-full bg-slate-300'>
                         <div className='w-2/3 h-2/3 relative rounded-full bg-slate-800'>
                             <div style={{ transform: `translate(-50%,-50%) rotate(${rotate}deg)` }} className='line w-full h-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -74,7 +74,7 @@ const Eyes = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
