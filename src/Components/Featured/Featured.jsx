@@ -27,16 +27,19 @@ const Featured = () => {
             animate={inView ? { x: 0, opacity: 1 } : { x: '-100%', opacity: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className='absolute flex z-50 right-[7rem] left-[50%] -translate-x-1/2 -translate-y-1/2 top-1/2 tracking-tighter text-6xl invisible transition-opacity duration-500' id="brazil">
+            <h1 className='absolute flex z-50  left-[50%] -translate-x-1/2 -translate-y-1/2 top-1/2 tracking-tighter text-6xl invisible transition-opacity duration-500' id="brazil">
               {"BRAZIL".split("").map((item,index)=>(
-                <span className='hidden sm:inline-block font-bold text-[#1b1c27]' key={index}>{item}</span>
+                <span className='hidden md:inline-block font-bold text-[#1b1c27]'style={{ WebkitTextStroke: '2px white' }} key={index}>{item}</span>
               ))}
             </h1>
             <div
-              className='h-full w-full sm:h-40 sm:w-40 md:w-full md:h-full rounded-xl bg-[url("https://www.celebritycruises.com/blog/content/uploads/2021/09/what-is-brazil-known-for-christ-the-redeemer-aerial-hero.jpg")] bg-cover '
+              className='h-full w-full  md:w-full md:h-full rounded-xl bg-[url("https://www.celebritycruises.com/blog/content/uploads/2021/09/what-is-brazil-known-for-christ-the-redeemer-aerial-hero.jpg")] bg-cover '
               onMouseEnter={() => document.getElementById("brazil").classList.remove("invisible")}
               onMouseLeave={() => document.getElementById("brazil").classList.add("invisible")}
-            />
+              
+            >
+              <div className='sm:hidden text-sm z-50 absolute bottom-[2px] left-0  text-white w-full h-[10%]'>BRAZIL</div>
+            </div>
           </motion.div>
           
           <motion.div
@@ -45,20 +48,23 @@ const Featured = () => {
             animate={inView ? { x: 0, opacity: 1 } : { x: '100%', opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className='absolute flex z-50 right-full translate-x-1/2 -translate-y-1/2 top-1/2 tracking-tighter text-6xl invisible transition-opacity duration-500' id="london">
+            <h1 className='absolute flex z-50 right-[50%] translate-x-1/2 -translate-y-1/2 top-1/2 tracking-tighter text-6xl invisible transition-opacity duration-500' id="london">
               {"LONDON".split("").map((item,index)=>(
-                <span className='hidden sm:inline-block text-[#1b1c27] font-bold' key={index}>{item}</span>
+                <span className='hidden md:inline-block text-[#1b1c27] font-bold'style={{ WebkitTextStroke: '2px white' }} key={index}>{item}</span>
               ))}
             </h1>
             <div
-              className='h-full w-full z-10 sm:h-40 sm:w-40 md:w-full md:h-full rounded-xl bg-[url("https://assets.editorial.aetnd.com/uploads/2019/03/topic-london-gettyimages-760251843-feature.jpg")]  bg-cover '
+              className='h-full w-full z-10 md:w-full md:h-full rounded-xl bg-[url("https://assets.editorial.aetnd.com/uploads/2019/03/topic-london-gettyimages-760251843-feature.jpg")]  bg-cover '
               onMouseEnter={() => document.getElementById("london").classList.remove("invisible")}
               onMouseLeave={() => document.getElementById("london").classList.add("invisible")}
-            />
+            >
+            <div className='sm:hidden text-sm z-50 absolute bottom-[2px] left-0  text-white w-full h-[10%]'>LONDON</div>
+            </div>
           </motion.div>
         </div>
       </div>
     </div>
+
   );
 };
 

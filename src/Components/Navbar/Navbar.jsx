@@ -38,7 +38,7 @@ function Navbar() {
       </div>
 
       {/* Navigation Links */}
-      <div className={`md:flex md:gap-10 md:items-center md:justify-between ${isMobileMenuOpen ? 'flex flex-col md:flex-row' : 'hidden'}`}>
+      <div className={`md:flex lg:gap-10 md:max-lg:gap-[3vw]  md:items-center md:justify-between ${isMobileMenuOpen ? 'flex flex-col md:flex-row' : 'hidden'}`}>
         {["About us", "Bookings", "Featured", "Our Work", "Contact us"]
           .filter((item) => !isMobileMenuOpen || item !== "Contact us")
           .map((item, index) => (
