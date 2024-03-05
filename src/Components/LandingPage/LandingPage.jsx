@@ -41,7 +41,7 @@ const LandingPage = () => {
               transition={{ease:[0.76, 0, 0.24, 1], duration:1}}
               className='border-2 md:border-4 border-black mr-[1vw] w-[8vw] rounded-md h-8 md:h-[4.6vw]  relative bg-[url("https://media.istockphoto.com/id/155439315/photo/passenger-airplane-flying-above-clouds-during-sunset.jpg?s=612x612&w=0&k=20&c=LJWadbs3B-jSGJBVy9s0f8gZMHi2NvWFXa3VJ2lFcL0=")] bg-no-repeat bg-cover '></motion.div>
               )}
-              <h1 className='uppercase text-[9.5vw] md:max-xl:text-[8vw] xl:text-8xl leading-[2.7rem] font-bold md:leading-[5.7vw] text-white' style={{ WebkitTextStroke: '1px black' }}>{item}</h1>
+              <h1 className='uppercase text-[9.5vw] md:max-xl:text-[8vw] xl:text-8xl leading-[2.7rem] font-[800] md:leading-[5.7vw] text-white'>{item}</h1>
               </div>
             </div>
           )
